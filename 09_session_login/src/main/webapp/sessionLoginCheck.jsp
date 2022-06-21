@@ -11,6 +11,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+	<%
+		if (isLogin) {
+	%>
+		아이디 : <%=memberId %> 로그인한 상태
+	<%
+		} else {
+	%>		
+		<script>
+			alert('로그인 되지 않은 상태');
+			location.href='sessionLogin.jsp';
+		</script>
+	<%
+		}
+	%>
 </body>
 </html>
