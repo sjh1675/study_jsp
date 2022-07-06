@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+		name="java/MySqlDB" 
+		auth="container" 
+		type="javax.sql.DataSource" 
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/bigdata" 
+		username="bigdata" 
+		password="12345" 
+		initialSize="10" 
+		maxActive="200" 
+		minIdle="10" 
+		maxWait="60000"/>
+		<!--  
+			initialSize : Connection pool 생성 시
+					      최초에 생성 할 커넥션 개수
+					      default : 0
+			maxActive 동시에 사용할 수 있는 최대 connection 수
+					      default : 8
+	        minIdle : 최소한으로 유지될 커넥션 수 default : 0
+			maxWait(millis) 할당받을 connection 객체가 없을때
+						스레드를 block시킬 시간(1/1000초)
+		-->
+</Context>
