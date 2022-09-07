@@ -5,7 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="s"%>
 <jsp:include page="../../common/header.jsp" />
 
-<jsp:useBean id="r" class="util.PageMaker" />
+<jsp:useBean id="pm" class="util.PageMaker" />
 <c:if test="${!empty param.page }">
 	<c:set target="${pm.cri }" property="page" value="${param.page }" />
 </c:if>

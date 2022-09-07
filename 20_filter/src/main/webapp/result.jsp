@@ -12,6 +12,6 @@
 		String test = request.getParameter("test");
 		out.print("test : " + test);
 	%>
-	<a href="index.jsp">index</a>
+	<a href="index.html">index</a>
 </body>
 </html>

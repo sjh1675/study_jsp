@@ -31,8 +31,8 @@
 	
 	<jsp:useBean id="member" class="vo.MemberVO" scope="page"/>
 	${member } <br>
-	<c:set target="${member }" property="id" value="id001"/>
-	<c:set target="${member }" property="pass" value="pw001"/>
+	<c:set target="${member}" property="id" value="id001"/>
+	<c:set target="${member}" property="pass" value="pw001"/>
 	${member } <br>
 	<hr>
 	<!-- 지정된 경로에 contextPath를 자동으로 부여 -->
